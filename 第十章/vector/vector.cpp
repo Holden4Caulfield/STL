@@ -8,6 +8,8 @@ int main()
 {
 	istream_iterator<int> i1(cin), i2;
 	vector<int>s(i1, i2);
+	copy(s.rbegin(), s.rend(), ostream_iterator<int>(cout, " "));
+	cout << endl;
 	sort(s.begin(), s.end());
 	deque<int>s2;
 	for (vector<int>::iterator iter = s.begin(); iter != s.end(); iter++)
@@ -19,5 +21,4 @@ int main()
 	cout << endl;
 	system("pause");
 	return 0;
-
 }
