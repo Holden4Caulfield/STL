@@ -16,7 +16,7 @@ int main()
 		if (isalpha(c))
 		{
 			c = tolower(c);
-			s[c]++;
+			s[c]++;                   //该字母出现频率加一
 		}
 	} while (c != '.');
 	for (map<char, int>::iterator iter = s.begin(); iter != s.end(); iter++)
